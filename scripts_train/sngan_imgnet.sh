@@ -1,6 +1,6 @@
 save_path=/path/to/save/
 data_path=/path/to/data/folder/
-OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES=0,1 python3.6 -u ./train.py \
+OMP_NUM_THREADS=2 CUDA_VISIBLE_DEVICES=0,1 python3.6 -u ./train.py \
     --random_seed 10 \
     --net sngan_imgnet128 \
     --dim_z 128 \
@@ -17,7 +17,7 @@ OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES=0,1 python3.6 -u ./train.py \
     --itr_d 5 --lr_d 0.0002 --beta1_d 0.0 --beta2_d 0.9 \
     --itr_g 1 --lr_g 0.0002 --beta1_g 0.0 --beta2_g 0.9 \
     --anneal_lr linear --anneal_lr_p1 400000 \
-    --n_gpu 2 --dali --n_workers 1 \
+    --n_gpu 2 --dali --n_workers 2 \
     --G_total_itrs 850000 --save_bias 2000 --start_itr 0 \
     --bn_g --sn_d \
     --b_metric hinge --c_metric hinge \

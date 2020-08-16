@@ -98,7 +98,23 @@ OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES=0 python3.6 -u ./eval_IS.py \
 ```
 Notice that, `[eval_FID, eval_FID_single].sh` require `.npz` files which stores pre-calculated mean and covariance FID statistics for different dataset. 
 
-Due to the sapce limitation we only provide the `.npz` files for CIFAR10(cifar10_FID_stat.npz) and ImageNet-143-64px (catdog143_64_FID_stat.npz) in the `../FID_stat` folder. 
+Due to the sapce limitation we only provide the `.npz` files for CIFAR10(cifar10_FID_stat.npz) and ImageNet-143-64px (catdog143_64_FID_stat.npz) in the `../FID_stat` folder for now. 
 
-Thus, we provide the code(`./scripts_eval/cal_FID_stat.sh`) for computing and saving data FID statistics.
+Thus, we provide the code(`./scripts_eval/cal_FID_stat.sh`) for computing and saving FID statistics.
 
+
+
+## Cite
+Please consider to cite this paper if you find it helpful in your research:
+
+    @article{zhong2020improving,
+    title={Improving the Speed and Quality of GAN by Adversarial Training},
+    author={Zhong, Jiachen and Liu, Xuanqing and Hsieh, Cho-Jui},
+    journal={arXiv preprint arXiv:2008.03364},
+    year={2020}
+    }
+
+
+
+## Acknowledgement
+    We would like to thank for the source code of [SN-GAN](https://github.com/pfnet-research/sngan_projection), [Rob-GAN](https://github.com/xuanqing94/RobGAN), [BigGAN](https://github.com/ajbrock/BigGAN-PyTorch) and any other resources which are helpful to us.

@@ -1,7 +1,7 @@
 #!/bin/bash
 load_path=/path/to/a/.pth/file/
 stat_path=/path/to/a/pre-calculated/FID/.npz/file
-OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES=3 python3.6 -u ./eval_FID.py \
+OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES=0 python3.6 -u ./eval_FID.py \
     --load_path ${load_path} --stat_path ${stat_path} \
     --net sngan_cifar10 \
     --dim_z 128 --img_c 3 --fm_base 128 --n_classes 10 \
