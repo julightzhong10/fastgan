@@ -117,4 +117,5 @@ Please consider to cite this paper if you find it helpful in your research:
 
 
 ## Acknowledgement
-    We would like to thank for the source code of [SN-GAN](https://github.com/pfnet-research/sngan_projection), [Rob-GAN](https://github.com/xuanqing94/RobGAN), [BigGAN](https://github.com/ajbrock/BigGAN-PyTorch) and any other resources which are helpful to us.
+
+We would like to thank for the source code of [SN-GAN](https://github.com/pfnet-research/sngan_projection), [Rob-GAN](https://github.com/xuanqing94/RobGAN), [BigGAN](https://github.com/ajbrock/BigGAN-PyTorch) and any other resources which are helpful to us.
