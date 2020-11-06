@@ -1,5 +1,5 @@
 # FastGAN
-*Improving the Speed and Quality of GAN by Adversarial Training*
+The official code release of the paper: [*Improving the Speed and Quality of GAN by Adversarial Training*](https://arxiv.org/abs/2008.03364)
 
 ## Requirements
 Code are mainly implemented via using PyTorch.
